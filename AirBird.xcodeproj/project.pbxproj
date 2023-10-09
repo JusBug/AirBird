@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A4FAEA642F7161FDCAE7F8 /* Pods_AirBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 508065A2F1881A845C9AC1F9 /* Pods_AirBird.framework */; };
 		D04B0E222AD3B52D00C16675 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B0E212AD3B52D00C16675 /* AppDelegate.swift */; };
 		D04B0E242AD3B52D00C16675 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B0E232AD3B52D00C16675 /* SceneDelegate.swift */; };
 		D04B0E262AD3B52D00C16675 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04B0E252AD3B52D00C16675 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A40AC5547BF79B2BAB69C76 /* Pods-AirBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBird.debug.xcconfig"; path = "Target Support Files/Pods-AirBird/Pods-AirBird.debug.xcconfig"; sourceTree = "<group>"; };
+		508065A2F1881A845C9AC1F9 /* Pods_AirBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04B0E1E2AD3B52D00C16675 /* AirBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04B0E212AD3B52D00C16675 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D04B0E232AD3B52D00C16675 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		D04B0E2A2AD3B52E00C16675 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D04B0E2D2AD3B52E00C16675 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D04B0E2F2AD3B52E00C16675 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FECBAAD85CB4F3C8BCD3D2F3 /* Pods-AirBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirBird.release.xcconfig"; path = "Target Support Files/Pods-AirBird/Pods-AirBird.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A4FAEA642F7161FDCAE7F8 /* Pods_AirBird.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AFCFA816C708AADED0DAFB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3A40AC5547BF79B2BAB69C76 /* Pods-AirBird.debug.xcconfig */,
+				FECBAAD85CB4F3C8BCD3D2F3 /* Pods-AirBird.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D04B0E152AD3B52D00C16675 = {
 			isa = PBXGroup;
 			children = (
 				D04B0E202AD3B52D00C16675 /* AirBird */,
 				D04B0E1F2AD3B52D00C16675 /* Products */,
+				1AFCFA816C708AADED0DAFB0 /* Pods */,
+				F3FA09BA1E3266FCC223CD1D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +124,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
+		F3FA09BA1E3266FCC223CD1D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				508065A2F1881A845C9AC1F9 /* Pods_AirBird.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -114,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D04B0E322AD3B52E00C16675 /* Build configuration list for PBXNativeTarget "AirBird" */;
 			buildPhases = (
+				E09C13AFA8A8A88E87BF6114 /* [CP] Check Pods Manifest.lock */,
 				D04B0E1A2AD3B52D00C16675 /* Sources */,
 				D04B0E1B2AD3B52D00C16675 /* Frameworks */,
 				D04B0E1C2AD3B52D00C16675 /* Resources */,
+				EFEDAD1796203E1828BB1651 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,6 +199,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E09C13AFA8A8A88E87BF6114 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirBird-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFEDAD1796203E1828BB1651 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirBird/Pods-AirBird-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirBird/Pods-AirBird-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirBird/Pods-AirBird-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D04B0E1A2AD3B52D00C16675 /* Sources */ = {
@@ -327,6 +396,7 @@
 		};
 		D04B0E332AD3B52E00C16675 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3A40AC5547BF79B2BAB69C76 /* Pods-AirBird.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -355,6 +425,7 @@
 		};
 		D04B0E342AD3B52E00C16675 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FECBAAD85CB4F3C8BCD3D2F3 /* Pods-AirBird.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
