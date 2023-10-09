@@ -56,15 +56,55 @@
 		D04B0E202AD3B52D00C16675 /* AirBird */ = {
 			isa = PBXGroup;
 			children = (
-				D04B0E212AD3B52D00C16675 /* AppDelegate.swift */,
-				D04B0E232AD3B52D00C16675 /* SceneDelegate.swift */,
-				D04B0E252AD3B52D00C16675 /* ViewController.swift */,
-				D04B0E272AD3B52D00C16675 /* Main.storyboard */,
-				D04B0E2A2AD3B52E00C16675 /* Assets.xcassets */,
-				D04B0E2C2AD3B52E00C16675 /* LaunchScreen.storyboard */,
-				D04B0E2F2AD3B52E00C16675 /* Info.plist */,
+				D04B0E392AD3B6E000C16675 /* Application */,
+				D04B0E382AD3B6DB00C16675 /* Resource */,
+				D04B0E372AD3B6D300C16675 /* Model */,
+				D04B0E362AD3B6CA00C16675 /* Controller */,
+				D04B0E352AD3B6C400C16675 /* View */,
 			);
 			path = AirBird;
+			sourceTree = "<group>";
+		};
+		D04B0E352AD3B6C400C16675 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D04B0E272AD3B52D00C16675 /* Main.storyboard */,
+				D04B0E2C2AD3B52E00C16675 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D04B0E362AD3B6CA00C16675 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D04B0E252AD3B52D00C16675 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D04B0E372AD3B6D300C16675 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D04B0E382AD3B6DB00C16675 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				D04B0E2F2AD3B52E00C16675 /* Info.plist */,
+				D04B0E2A2AD3B52E00C16675 /* Assets.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D04B0E392AD3B6E000C16675 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				D04B0E232AD3B52D00C16675 /* SceneDelegate.swift */,
+				D04B0E212AD3B52D00C16675 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,7 +334,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Y9T7FAS4K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AirBird/Info.plist;
+				INFOPLIST_FILE = AirBird/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +362,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 3Y9T7FAS4K;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = AirBird/Info.plist;
+				INFOPLIST_FILE = AirBird/Resource/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
